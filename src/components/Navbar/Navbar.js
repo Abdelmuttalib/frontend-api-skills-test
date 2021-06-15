@@ -29,8 +29,8 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     alignItems: "center",
-    color: "#009688",
-    // color: "#fff",
+    // color: "#009688",
+    color: "#fff",
     textDecoration: "none",
   },
   image: {

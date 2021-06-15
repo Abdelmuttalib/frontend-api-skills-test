@@ -176,7 +176,7 @@ const RecipeView = ({ match }) => {
             className={classes.cover}
             image={
               fetchedRecipe.images == undefined
-                ? "https://images.pexels.com/photos/1217324/pexels-photo-1217324.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                ? "https://images.pexels.com/photos/1199959/pexels-photo-1199959.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
                 : fetchedRecipe.images.medium
             }
             title={fetchedRecipe.title}
@@ -229,7 +229,11 @@ const RecipeView = ({ match }) => {
           </div> */}
           {/* <Collapse in={expanded} timeout="auto" unmountOnExit> */}
           <CardContent
-            style={{ display: "flex", justifyContent: "space-between" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              flexDirection: "column",
+            }}
           >
             {fetchedRecipe.ingredients !== undefined && (
               <Ingredients ingredients={fetchedRecipe.ingredients} />
